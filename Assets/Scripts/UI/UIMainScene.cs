@@ -73,4 +73,16 @@ public class UIMainScene : MonoBehaviour
             InfoPopup.Name.text = content.GetName();
         }
     }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void NewColorSelected(Color color)
+    {
+        // add code here to handle when a color is selected
+        MainManager.Instance.TeamColor = color;
+    }
+
 }
